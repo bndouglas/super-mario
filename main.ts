@@ -1,3 +1,8 @@
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (mySprite.vy == 0) {
+        mySprite.vy = -100
+    }
+})
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.vx = -100
     animation.runImageAnimation(
